@@ -11,11 +11,11 @@ const run = async()=>{
     //we need to load our models
     // pre-trained machine learning for our facial detection!
     await Promise.all([
-        faceapi.nets.ssdMobilenetv1.loadFromUri('./models'),
-        faceapi.nets.faceLandmark68Net.loadFromUri('./models'),
-        faceapi.nets.faceRecognitionNet.loadFromUri('./models'),
-        faceapi.nets.ageGenderNet.loadFromUri('./models'),
-        faceapi.nets.faceExpressionNet.loadFromUri('./models'),
+        faceapi.nets.ssdMobilenetv1.loadFromUri('/models'),
+        faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
+        faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
+        faceapi.nets.ageGenderNet.loadFromUri('/models'),
+        faceapi.nets.faceExpressionNet.loadFromUri('/models'),
     ])
 
     //make the canvas the same size and in the same location
